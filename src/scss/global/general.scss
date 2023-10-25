@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'system-ui';
+	font-style: normal;
+	font-weight: 400;
+	color: $black;
+	background: $white;
+	letter-spacing: 0.2px;
+}
+
+a, button {
+	transition: all .3s;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+	height: 100%;
+	object-fit: contain;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1350px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn {
+	outline: none;
+	border-radius: 8px;
+	background: $yellow;
+	border: 2px solid $yellow;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: $white;
+	transition: all .3s ease;
+	padding: 16px;
+
+	&:hover {
+		cursor: pointer;
+		background: $white;
+		color: $yellow;
+	}
+}
+
+.section-title{
+	font-weight: 500;
+	font-size: 36px;
+}
