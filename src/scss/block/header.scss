@@ -1,0 +1,70 @@
+.header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		padding: 16px 0;
+
+		.logo {
+			&__img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+
+		.menu {
+			flex: 1 1 0;
+
+			&__list {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				padding: 0 32px;
+
+				&-item {
+				}
+
+				&-link {
+					font-size: 24px;
+					text-transform: uppercase;
+					display: inline-block;
+
+					&:after {
+						content: "";
+						display: block;
+						width: 0;
+						height: 2px;
+						background-color: $yellow;
+						transition: width .3s ease-in 0s;
+					}
+
+					&:hover:after {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.social {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 8px 24px;
+			max-width: 153px;
+
+			&__img {
+				width: 35px;
+				height: 35px;
+
+				path {
+					transition: all .3s ease;
+				}
+
+				&:hover {
+					path {
+						fill: $yellow;
+					}
+				}
+			}
+		}
+	}
+}
