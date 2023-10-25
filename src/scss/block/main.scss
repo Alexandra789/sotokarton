@@ -1,0 +1,26 @@
+.main {
+	background: url("https://sotokarton.by/images/slides/28_bg.jpg?v=v6538cd1f97349") no-repeat center;
+
+	&__inner {
+		padding: 64px 0;
+		max-width: 1000px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 48px;
+		margin-bottom: 32px;
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: 28px;
+		margin-bottom: 40px;
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 32px;
+		align-items: center;
+	}
+}
